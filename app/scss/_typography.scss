@@ -1,0 +1,56 @@
+h1 {
+	font-weight: 400;
+	font-size: 36px;  // was 42
+	margin-bottom: 4px;
+	color: $darkest-grey;
+    line-height: 44px;
+}
+
+h2 {
+	color: $darkest-grey;
+	font-weight: 400;
+}
+
+p {
+	color: $dark-grey;
+	font-size: 18px;
+	margin: 0 0 16px;
+}
+
+.title-wrap {
+	text-align: center;
+}
+
+.title-area {
+	margin: 0 auto 16px;
+	display: inline-block;
+	.title-icon {
+		width: 100px;
+        margin-bottom:12px;
+	}
+	.title-text {
+		h1 {
+		}
+        p {
+            font-size:24px; // was 18
+            line-height: 29px;
+        }
+	}
+}
+
+.error-msg {
+	color: $red;
+	font-weight: 800;
+	text-align: center;
+	margin: 0;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+button.oui-button {  // doesn't match one ui button styles
+    display: block;
+    width:100%;
+    font-size: 18px; // mockup was 17.5
+}

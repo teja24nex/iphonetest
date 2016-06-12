@@ -1,0 +1,31 @@
+{
+  "name": "IdentityImageCapture",
+  "version": "0.0.1",
+  "description": "UI for IdentityImageCapture",
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-ui-router": "^0.2.13",
+    
+    "angular-cookies": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-mocks": "~1.4.7",
+    "angular-resource": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "angular-touch": "~1.4.7",
+    "angular-translate": "~2.8.1",
+    "jquery": "~2.1.4",
+    "angular-translate-storage-local": "~2.8.1",
+    "angular-translate-loader-url": "~2.8.1",
+    
+    "ngprogress": "~1.1.3"
+  },
+  "resolutions": {
+    "angular": "1.4.10",
+    "oneui-core-style": "3.1.2",
+    "oneui-icons": "3.0.2"
+  },
+  "devDependencies": {
+    "angular-translate-loader-partial": "~2.8.1"
+  }
+}

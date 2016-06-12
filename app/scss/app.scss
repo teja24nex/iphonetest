@@ -1,0 +1,37 @@
+/**
+ * Top level sass file
+ * Import your sass here
+ */
+@import "_bootstrap-grid.scss";
+@import "_oneui-settings.scss";
+//@import "../../bower_components/oneui-core-style/dist/oneui-core-style.scss";
+//@import "../../bower_components/oneui-icons/dist/oneui-icons.scss";
+//@import "../../bower_components/oneui-footer/dist/oneui-footer.scss";
+//@import "../../bower_components/oneui-footer/dist/settings-oneui-footer.scss";
+
+@import "footer-core.scss";
+@import "footer.scss";
+
+
+@import "_variables.scss";
+@import "header.scss";
+
+@import "_helpers.scss";
+@import "govtID.scss";
+
+.main-body{
+	min-height:80vh;
+	
+	width:100%;	
+}
+
+.page {
+    min-height: calc(100vh - 237px);
+    padding-bottom:64px;
+}
+
+// removes extra down arrow from dropdown on IE10+ --> investigate/confirm --> OneUI
+select::-ms-expand{
+  display:none;
+}
+

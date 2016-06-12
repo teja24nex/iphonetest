@@ -1,0 +1,161 @@
+<div>
+
+	<!--<label class="import-file">
+    <input type="file" multiple onchange="angular.element(this).scope().fileNameChanged(this)">
+    <div>Import file...</div>
+</label>-->
+
+
+
+<!--<div class="modal-overlay" ng-class="{'active': (!cvvModal)	}" ng-click="cvvModal=false"></div>-->
+	<div class="modal-gov" ng-class="{'active': !cvvModal }">
+		<div class="modal-content-gov ">
+			<a class="modal-back-gov" ng-click="cvvModal=false">
+				<img src="images/close.png" alt="close modal" ng-click="navigateBack('main')" />
+			</a>
+			<div class="modal-top-icon-bg-gov">
+				<img src="images/upload.png" alt="card icon" class="modal-top-icon-gov"/>
+			</div>
+			<h1 class="upload-header text-center" translate-default="Upload images of your drivers license" translate="dummy"></h1>
+
+			<div ng-show="(uploadPhase1 === true)">
+
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<input type="file" id="file1" onchange="angular.element(this).scope().frontFileUpload(this)" name="file1" style="display:none" />
+						<button id="frontImage" class="oui-button  upload-button" type="submit" translate-default="Upload Front Image" translate="dummy" id="id-autoloans-continue"></button>
+
+							<!--<button class="oui-button  upload-button" type="submit" ng-click="" translate-default="Upload Front Image" translate="dummy" id="id-autoloans-continue"> <label for="file">Choose a file</label></button>-->
+
+							
+
+					</div>
+				</div>
+			</div>
+
+			<div ng-show="(uploadPhase2 === true)">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="product-card">
+							<img src="images/close.png" class="close-front-upload" alt="close modal" ng-click="navigateBack('main')" />							
+							<div class="product-card-lower">
+								<div class="row ">
+									<div class="col-md-2">
+										<img src="images/front-license.png" class="dummy-card"  alt="close modal"  />
+									</div>
+									<div class="col-md-8 ">
+										<div class="status-bar">
+											<span>{{ddValueSelected}}</span>
+											<span translate-default="Front:" translate="translatedJSON" ></span>
+											<span>{{frontFileName}}</span>
+											<div class="progress-bar"></div>
+											<div ng-show="(uploadPhase3 === false)">
+											 	<span translate-default="Uploading..." translate="translatedJSON"></span>
+												<span class="percentage"></span>
+											</div>
+
+											<div ng-show="(uploadPhase3 === true)">
+											 	<span translate-default="Completed" translate="translatedJSON"></span>												
+											</div>
+																					
+										</div>
+									</div>
+									<div class="col-md-2">
+										<img src="images/success-icon.png" class="success-icon"  alt="close modal"  />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div ng-show="(uploadPhase3 === true && uploadPhase4 === false)">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<input type="file" id="file2" onchange="angular.element(this).scope().backFileUpload(this)" name="file2" style="display:none" />
+							<button id="backImage" class="oui-button  upload-button" type="submit" translate-default="Upload Back Image" translate="dummy" ></button>
+
+								
+						</div>
+					</div>
+				</div>
+
+				<div ng-show="(uploadPhase3 === true && uploadPhase4 === true)">
+					<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="product-card">
+							<img src="images/close.png" class="close-front-upload" alt="close modal" ng-click="navigateBack('main')" />							
+							<div class="product-card-lower">
+								<div class="row ">
+									<div class="col-md-2">
+										<img src="images/back-license.png" class="dummy-card"  alt="close modal"  />
+									</div>
+									<div class="col-md-8 ">
+										<div class="status-bar">
+											<span>{{ddValueSelected}}</span>
+											<span translate-default="Back:" translate="translatedJSON" ></span>
+											<span>{{backFileName}}</span>
+											<div class="progress-bar-back"></div>
+											<div ng-show="(uploadPhase5 === false)">
+											 	<span translate-default="Uploading..." translate="translatedJSON"></span>
+												<span class="percentage-back"></span>
+											</div>
+
+											<div ng-show="(uploadPhase5 === true)">
+											 	<span translate-default="Completed" translate="translatedJSON"></span>												
+											</div>
+																					
+										</div>
+									</div>
+									<div class="col-md-2">
+										<img src="images/success-icon.png" class="success-icon"  alt="close modal"  />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+
+
+				<div ng-show="(uploadPhase6 === true)">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							
+							<button id="submitImage" class="oui-button action-inverted submit-button" type="submit" translate-default="Submit These Images" translate="dummy" ng-click="submitImages()" ></button>
+
+								
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+			
+
+
+			<div class="align-height">
+
+				<span class="subfoot" translate-default="Make sure your image is good quality. Not sure what maes a good image?" translate="translatedJSON"></span>
+				<a class="main-talk" translate-default="Here's an example." translate="translatedJSON"></a>
+
+			</div>
+			
+
+
+
+			
+			
+
+
+			
+		</div>
+
+		
+	</div>
+
+
+
+
+</div>

@@ -1,0 +1,82 @@
+<div>
+
+	<!--<label class="import-file">
+    <input type="file" multiple onchange="angular.element(this).scope().fileNameChanged(this)">
+    <div>Import file...</div>
+</label>-->
+
+
+
+<!--<div class="modal-overlay" ng-class="{'active': (!cvvModal)	}" ng-click="cvvModal=false"></div>-->
+	<div class="modal-gov" ng-class="{'active': !cvvModal }">
+		<div class="modal-content-gov ">
+			
+			<div class="modal-top-icon-bg-gov">
+				<img src="images/brown-wallet.png" alt="card icon" class="modal-top-icon-gov"/>
+			</div>
+			<h1 class="gov-header text-center" translate-default="Choose a form of ID to verify it's really you" translate="dummy"></h1>
+			<p class="subhead text-center" translate-default="It looks like you followed an email link here. Select a type of identification to begin the verification process." translate="dummy"></p>
+
+
+
+			
+			<div class="account-select">
+				<p class="text-left gov-dd-header" translate-default="Your Verification Form" translate="dummy"></p>
+				<button id="id-signin-dropdown" class="account-button" ng-click="toggleSigninDropdown()" ng-keydown="key($event)"> <span> {{defaultMainLabel}} </span> </button>
+				<br><br>
+
+
+				<div id="id-signin-animate " class='animate-hide' ng-mouseover="hover()">
+				  		<div id="option1" ng-click="itemSelected('translatedJSON', 'Driver\'s Licence')" class="item-list" value="Driver\'s Licence">
+				  			<label id="id-signin-credit" class="item-list-label"  translate-default="Driver's Licence" translate="translatedJSON"></label>
+				  		</div>
+
+				  		
+
+				  		<div id="option2" class="item-list" ng-click="itemSelected('translatedJSON', 'State/territory-issued ID')" value="State/territory-issued ID">
+				  			<label id="id-signin-auto" class="item-list-label" translate-default="State/territory-issued ID" translate="translatedJSON"></label>
+				  		</div>
+
+				  		<div id="option3" class="item-list" ng-click="itemSelected('translatedJSON', 'Military/Government ID')" value="Military/Government ID">
+				  			<label id="id-signin-online" class="item-list-label" translate-default="Military/Government ID" translate="translatedJSON"></label>
+				  		</div>
+
+				  		<div id="option4" class="item-list" ng-click="itemSelected('translatedJSON', 'Permanent Resident Card')" value="Permanent Resident Card">
+				  			<label id="id-signin-online" class="item-list-label" translate-default="Permanent Resident Card" translate="translatedJSON"></label>
+				  		</div>
+
+				  		<div id="option5" class="item-list" ng-click="itemSelected('translatedJSON', 'Passport')" value="Passport">
+				  			<label id="id-signin-online" class="item-list-label" translate-default="Passport" translate="translatedJSON"></label>
+				  		</div>
+
+				  		<div id="option6" class="item-list" ng-click="itemSelected('translatedJSON', 'Passport Card')" value="Passport Card">
+				  			<label id="id-signin-online" class="item-list-label" translate-default="Passport Card" translate="translatedJSON"></label>
+				  		</div>
+
+				  		
+
+					  		
+				  		
+
+				  	</div>
+					<span class="align-center">
+
+						<span class="subfoot" translate-default="Something not right??" translate="translatedJSON"></span>
+						<a class="main-talk" translate-default="Let's talk" translate="translatedJSON"></a>
+
+					</span>
+				  	
+
+			</div>
+
+
+			
+		</div>
+
+		
+	</div>
+
+
+
+
+</div>

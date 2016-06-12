@@ -1,0 +1,73 @@
+// layout helpers
+
+.pad168 {
+    padding-top: 168px;
+}
+
+.pad72 {
+	padding-top: 72px;
+}
+
+.pad44 {
+	padding-top: 44px;
+}
+
+.pad16 {
+	padding-top: 16px;
+}
+
+.mar24 {
+    margin-top:24px;
+}
+
+.mar48 {
+    margin-top:48px;
+}
+
+.font16 {
+    font-size:16px;
+}
+
+// input helpers
+
+.input-icon-username {
+    position:relative;
+    &:before {
+        content: "";
+        position: absolute;
+        font-family: 'ui-icons';
+        height: 24px;
+        width: 24px;
+        display: block;
+        font-size: 24px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, .9);
+        top: 46px;
+        left: 12px;
+        z-index: 2;
+    }
+    + input {
+        padding-left: 42px;
+    }
+}
+
+.input-icon-password {
+    position:relative;
+    &:before {
+        content: "";
+        position: absolute;
+        font-family: 'ui-icons';
+        height: 24px;
+        width: 24px;
+        display: block;
+        font-size: 24px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, .9);
+        top: 46px;
+        left: 12px;
+        z-index: 2;
+    }
+    + input {
+        padding-left: 42px;
+    }
+}

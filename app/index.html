@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>Title</title>
+	<meta name="description" content="Project Description">
+	<meta charset="UTF-8">
+	<!-- mobile meta tags -->
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+	<meta name="apple-mobile-web-app-title" content="">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+
+<body ng-app="govtID">
+	<div class="main-header1">
+		<capitaloneheader></capitaloneheader>
+	</div>
+
+	<div class="main-body">
+		<ui-view></ui-view>
+	</div>
+	
+	<div class="main-footer1">
+		<footer  usa-footer id="usa-footer-directive" ></footer>
+	</div>
+	
+	<div id="flash-div" aria-hidden="true"></div>
+	<script type="text/javascript" src="js/all.js"></script>	
+</body>
+</html>

@@ -1,0 +1,60 @@
+<div>
+
+	<!--<label class="import-file">
+    <input type="file" multiple onchange="angular.element(this).scope().fileNameChanged(this)">
+    <div>Import file...</div>
+</label>-->
+
+
+
+<!--<div class="modal-overlay" ng-class="{'active': (!cvvModal)	}" ng-click="cvvModal=false"></div>-->
+	<div class="modal-gov" ng-class="{'active': !cvvModal }" ng-init="secureSubmissionLaunch()">
+		<div class="modal-content-gov">
+			
+			<div class="modal-top-icon-bg-gov">
+				<img src="images/sending.png" alt="card icon" class="modal-top-icon-gov"/>
+			</div>
+			<h1 class="upload-header text-center" translate-default="Securely submitting your ID images" translate="dummy"></h1>
+
+			<p class="subhead text-center" translate-default="Your ID is being analyzed for quality and information right now." translate="dummy"></p>
+
+			
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="progress-bar-secure"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-2">
+
+					<div class="align-height">
+
+						<span class="subfoot" ng-click="scan()" translate-default="Please do not leave or close this page" translate="translatedJSON"></span>
+						
+
+					</div>
+
+				</div>
+			</div>
+
+			
+			
+
+
+
+			
+			
+
+
+			
+		</div>
+
+		
+	</div>
+
+
+
+
+</div>

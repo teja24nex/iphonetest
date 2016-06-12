@@ -1,0 +1,77 @@
+<header class="header header-small">
+	<div class="header-upper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-xs-3">
+					<a ui-sref="sign-in" class="header-upper-logo">
+						<img src="images/capitalone-logo.png" alt="logo" />
+					</a>
+				</div>
+				<div class="col-md-10 col-xs-9">
+					<ul class="header-upper-menu pull-right">
+
+						<li class="country-li" id="id-country-li" ng-show="showCountries">
+							<a class="dropdown" ng-click="displayCountries()" id="country-dropdown">
+								<i class="oui-icon-map-pin outline oui-icon-small" id="map-pin" ></i>
+								<span translate-default={{headerSelection.selectedCountry.defaultName}} translate={{heaheaderSelection.selectedCountry.name}} class="hidden-xs"></span>
+
+							</a>
+							<ul id="dropdown-item-1" class="dropdown-item-1" ng-show="showCountriesFlag">
+								<li ng-click="changeCountry(country)" ng-repeat="country in headerSelection.countries track by country.id" translate={{country.name}} translate-default={{country.defaultName}}></li>
+							</ul>
+						</li>
+
+
+
+
+
+						<li class="language-li" ng-show="showLanguages">
+							<a class="dropdown" ng-click="displayLanguages()" id="id-language-dropdown">
+								<i class="oui-icon-globe outline oui-icon-small" id="id-globe-icon"></i>
+								<span ng-show="headerSelection.selectedCountry.id == 1" class="hidden-xs" id="id-selected-country">{{headerSelection.selectedLanguageForUSA.name}}</span>
+								<span ng-show="headerSelection.selectedCountry.id == 2" class="hidden-xs" id="id-selected-country">{{headerSelection.selectedLanguageForCA.name}}</span>
+							</a>
+							<ul id="dropdown-item-2" class="dropdown-item-2" ng-show="showLanguagesFlag">
+
+								<li ng-show="headerSelection.selectedCountry.id == 1" ng-click="changeLanguage(language,'update')" ng-repeat="language in headerSelection.languagesForUSA track by language.id" translate={{language.name}} translate-default={{language.defaultName}}> </li>
+								<li ng-show="headerSelection.selectedCountry.id == 2" ng-click="changeLanguage(language,'update')" ng-repeat="language in headerSelection.languagesForCA track by language.id" translate={{language.name}} translate-default={{language.defaultName}}></li>
+							</ul>
+						</li>
+
+
+
+						<li ng-show="showSearch">
+							<a href="#" class="hidden-xs">
+								<i class="oui-icon-search outline oui-icon-small"></i>
+								<span class="hidden-xs">Search</span>
+							</a>
+						</li>
+						<li ng-show="showSignin">
+							<a href="#" class="sign-in-link">
+								<img src="images/sign-in-icon.png" alt="sign-in-icon" class="sign-in-icon" />
+								<span>Sign In</span>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-overlay" ng-class="{'active': (cvvModal)	}" ng-click="cvvModal=false"></div>
+	<div class="modal" ng-class="{'active': cvvModal }">
+		<div class="modal-content text-center">
+			<a class="modal-close" ng-click="cvvModal=false">
+				<img src="images/close.png" alt="close modal" />
+			</a>
+			<div class="modal-top-icon-bg">
+				<img src="images/language-popup-icon.png" alt="card icon" class="modal-top-icon"/>
+			</div>
+			<h1 translate-default="Bienvenido(a) a Capital One" translate="languageJsonProps.sic.SpanishDisclaimer.header.text"></h1>
+			<p  translate-default="Nos complace informar que nuestro sitio web ahora ofrece la opción de presentar el contenido en español. Aunque algunas opciones están disponibles en español, otras páginas, documentos, y servicios solo están disponibles en inglés en este momento. Usted debe revisar páginas de Internet y documentos en cualquiera de los idiomas porque pueden contener información importante sobre su cuenta. ¿Le gustaría continuar en español?" translate="languageJsonProps.sic.SpanishDisclaimer.body.text"></p>
+			<button class="oui-button progressive" type="submit" ng-click="continueLanguageChange()" translate-default="Continuar" translate="languageJsonProps.sic.SpanishDisclaimer.continue.text" id="id-modal-continue"></button><br><br>
+		</div>
+	</div>
+</header>
